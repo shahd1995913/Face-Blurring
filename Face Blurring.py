@@ -1,7 +1,8 @@
 # Importing libraries
 import numpy as np
-import cv2
 import matplotlib.pyplot as plt
+import cv2
+
 
 # A function called showimage  for showing the images
 def showimage(img):
