@@ -19,10 +19,10 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # show the original image
 showimage(image)
 
-# used a haarcascades  in csv make a face detect 
+# Haar cascades are machine learning object detection algorithms.
 detect_face = cv2.CascadeClassifier(cv2.data.haarcascades +'haarcascade_frontalface_alt.xml')
 result = detect_face.detectMultiScale(image, 1.2, 1) # return number
-print(result)  # saved in x y w h 
+# print(result)  # saved in x y w h 
 
 # Draw rectangle around the faces which is in ( saved in x y w h ) region of interest (ROI)
 for (x, y, w, h) in result:
@@ -35,3 +35,6 @@ for (x, y, w, h) in result:
     
 # get the output
 showimage(image)
+
+
+
