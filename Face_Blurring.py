@@ -15,7 +15,7 @@ def showimage(img):
 image = cv2.imread("img.jpg")
 
 # Converting BGR image into a RGB image
-image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 # show the original image
 showimage(image)
